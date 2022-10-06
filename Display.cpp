@@ -20,3 +20,8 @@ Display::Display(Display &display) {
     version = display.version;
     monitor_size = display.monitor_size;
 }
+
+ostream &operator<<(ostream &os, const Display *dt) {
+    os << "Display -> Company: " << dt->company << "; Version: " << dt->version << "; Monitor size: " << dt->monitor_size;
+    return os;
+}

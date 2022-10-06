@@ -20,3 +20,8 @@ RAM::RAM(RAM &ram) {
     version = ram.version;
     ram_size = ram.ram_size;
 }
+
+ostream &operator<<(ostream &os, const RAM *dt) {
+    os << "RAM -> Company: " << dt->company << "; Version: " << dt->version << "; Ram size: " << dt->ram_size;
+    return os;
+}

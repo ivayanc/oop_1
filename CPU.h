@@ -18,6 +18,7 @@ public:
     ~CPU() = default;
     bool isValid(int & version, int & max_temperature);
     CPU(CPU &cpu);
+    friend ostream& operator<<(ostream& os, const CPU* dt);
 };
 
 

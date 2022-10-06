@@ -18,6 +18,7 @@ public:
     ~RAM() = default;
     bool isValid(int & version, int & ram_size);
     RAM(RAM &ram);
+    friend ostream& operator<<(ostream& os, const RAM* dt);
 };
 
 

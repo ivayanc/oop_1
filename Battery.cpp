@@ -20,3 +20,8 @@ Battery::Battery(Battery &battery) {
     version = battery.version;
     alive_time = battery.alive_time;
 }
+
+ostream &operator<<(ostream &os, const Battery* dt) {
+    os << "Battery -> Company: " << dt->company << "; Version: " << dt->version << "; Alive time: " << dt->alive_time;
+    return os;
+}

@@ -20,3 +20,8 @@ CPU::CPU(CPU &cpu) {
     version = cpu.version;
     max_temperature = cpu.max_temperature;
 }
+
+ostream &operator<<(ostream &os, const CPU* dt) {
+    os << "CPU -> Company: " << dt->company << "; Version: " << dt->version << "; Max temperature: " << dt->max_temperature;
+    return os;
+}

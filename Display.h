@@ -18,6 +18,7 @@ public:
     ~Display() = default;
     bool isValid(int & version, int & monitor_size);
     Display(Display &display);
+    friend ostream& operator<<(ostream& os, const Display* dt);
 };
 
 

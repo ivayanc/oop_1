@@ -18,6 +18,7 @@ public:
     ~Battery() = default;
     bool isValid(int & version, int & alive_time);
     Battery(Battery &battery);
+    friend ostream& operator<<(ostream& os, const Battery* dt);
 };
 
 
