@@ -19,4 +19,4 @@ Laptop& Laptop::operator=(const Laptop &other) {
 ostream &operator<<(ostream &os, const Laptop &dt) {
     os << "Laptop:\n\t" << dt.battery << "\n\t" << dt.display  << "\n\t" << dt.ram << "\n\t" << dt.cpu;
     return os;
-};
+}
