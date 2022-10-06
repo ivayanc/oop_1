@@ -6,7 +6,7 @@
 
 Display::Display(char *company, int version, int monitor_size) : company(company), version(version), monitor_size(monitor_size){
     if (!isValid(version, monitor_size))
-        throw invalid_argument("Invalid input data for the CPU!");
+        throw invalid_argument("Invalid input data for the Display!");
 }
 
 bool Display::isValid(int & version, int & monitor_size) {
